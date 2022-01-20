@@ -64,12 +64,6 @@
   .section-plan__plan {
     padding: 6rem;
   }
-
-  .section-plan__--premium::before {
-    top: 8%;
-    right: -17.6%;
-    padding: 0.8rem 8rem;
-  }
 }
 
 @media (max-width: 771px) {
@@ -130,8 +124,15 @@
   }
 
   .section-plan__--premium::before {
-    top: 19%;
-    right: -14.6%;
-    padding: 0.8rem 11rem;
+    top: 8%;
+    right: -17.6%;
+    transform: rotate(45deg);
+    padding: 0.4rem 8rem;
+  }
+}
+
+@media (max-width: 411px) {
+  .section-how .grid--3-cols {
+    grid-template-columns: 1fr;
   }
 }
