@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rachi</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Sora:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="sass/main.css" />
+
+    <!-- SCRIPTS -->
+
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- custom scripts -->
+    <script defer src="scripts/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <img src="assets/logo-rachi.svg" alt="Logo da página Rachi" class="header__logo" />
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li>
+              <a class="main-nav__link" href="#">Funcionalidades</a>
+            </li>
+            <li>
+              <a class="main-nav__link" href="#">App</a>
+            </li>
+            <li>
+              <a class="main-nav__link" href="#">Planos</a>
+            </li>
+            <li>
+              <a class="main-nav__link" href="#">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+
+      <section class="section-hero">
+        <div
+          class="section-hero__container"
+          data-aos="fade-left"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div class="section-hero__text-box">
+            <h1 class="section-hero__text">
+              Rachi,<br />
+              é tudo que você<br />
+              precisa em um só lugar.
+            </h1>
+
+            <a href="#" class="btn">Cadastrar-se</a>
+          </div>
+          <div class="section-hero__img-box">
+            <img
+              src="assets/working-from-anywhere.svg"
+              class="section-hero__img"
+              alt="Uma imagem representando um humano trabalhando onde ele quiser."
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-how"
+        data-aos="fade-right"
+        data-aos-delay="400"
+        data-aos-duration="1000"
+      >
+        <!-- Heading -->
+        <div class="container">
+          <span class="subheading">Como funciona? &mdash;</span>
+          <h2 class="heading-secondary">Lorem ipsum dolor sit amet consectetur elit</h2>
+        </div>
+        <!-- END: Heading -->
+
+        <div class="section-how__items container grid grid--3-cols">
+          <div class="section-how__item">
+            <img class="section-how__image" src="assets/svg--1.svg" alt="SVG 1" />
+            <h3 class="section-how__title">Crie conexões</h3>
+            <p class="section-how__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. A debitis qui exercitationem
+              sunt deserunt atque.
+            </p>
+          </div>
+
+          <div class="section-how__item">
+            <img class="section-how__image" src="assets/svg--2.svg" alt="SVG 1" />
+            <h3 class="section-how__title">100% gratuito</h3>
+            <p class="section-how__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nemo iste harum
+              odit impedit enim hic.
+            </p>
+          </div>
+
+          <div class="section-how__item">
+            <img class="section-how__image" src="assets/svg--3.svg" alt="SVG 1" />
+            <h3 class="section-how__title">Compartilhamento</h3>
+            <p class="section-how__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam impedit blanditiis quae.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-app">
+        <div class="container grid grid--2-cols">
+          <div class="section-app__text-box" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="heading-secondary mb-24">Baixe nosso app para desfrutar mais!</h2>
+
+            <p class="section-app__text">
+              Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum
+              amet vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium.
+            </p>
+
+            <div class="section-app__cta">
+              <img
+                src="assets/btn-google-play.svg"
+                alt="Botão para baixar o nosso app na Google Play"
+                class="section-app__cta-image"
+              />
+              <img
+                src="assets/btn-app-store.svg"
+                alt="Botão para baixar o nosso app na App Store"
+                class="section-app__cta-image"
+              />
+            </div>
+          </div>
+          <div class="section-app__image-box" data-aos="zoom-in" data-aos-duration="1000">
+            <img class="section-app__image" src="assets/New notifications-amico 1.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-plan">
+        <!-- Heading -->
+        <div class="container-heading text-center">
+          <span class="subheading">Nossos planos &mdash;</span>
+          <h2 class="heading-secondary">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </h2>
+        </div>
+        <!-- END: Heading -->
+
+        <div class="section-plan__container">
+          <div class="container grid grid--3-cols">
+            <!-- 1 -->
+            <div
+              class="section-plan__plan section-card--1"
+              data-aos="flip-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <header class="section-plan__header">
+                <p class="section-plan__type">Bronze</p>
+                <p class="section-plan__price"><span>R$</span>28<span>/mês</span></p>
+              </header>
+
+              <p class="section-plan__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis
+                euismod ultrices.
+              </p>
+
+              <div class="section-plan__sign-up">
+                <a href="#" class="btn btn-sign-up">Assinar</a>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div
+              class="section-plan__plan section-plan__--premium section-card--2"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <header class="section-plan__header">
+                <p class="section-plan__type">Prata</p>
+                <p class="section-plan__price"><span>R$</span>57<span>/mês</span></p>
+              </header>
+
+              <p class="section-plan__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis
+                euismod ultrices.
+              </p>
+
+              <div class="section-plan__sign-up">
+                <a href="#" class="btn btn--white btn-sign-up">Assinar</a>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div
+              class="section-plan__plan section-card--3"
+              data-aos="flip-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <header class="section-plan__header">
+                <p class="section-plan__type">Ouro</p>
+                <p class="section-plan__price"><span>R$</span>94<span>/mês</span></p>
+              </header>
+
+              <p class="section-plan__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis
+                euismod ultrices.
+              </p>
+
+              <div class="section-plan__sign-up">
+                <a href="#" class="btn btn-sign-up">Assinar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact">
+        <!-- Heading -->
+        <div class="container-heading text-center">
+          <span class="subheading">Contato &mdash;</span>
+          <h2 class="heading-secondary">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </h2>
+        </div>
+        <!-- END: Heading -->
+        <form>
+          <input type="text" placeholder="Seu melhor e-mail" aria-required="true" required />
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img src="assets/logo-rachi.svg" alt="Logo da empresa Rachi" />
+
+        <p>Rachi - Todos os direitos reservados. &copy;</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

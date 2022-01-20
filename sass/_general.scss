@@ -1,0 +1,83 @@
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Sora', sans-serif;
+*/
+
+/* 
+
+############## Font-size System (px): #############
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+############# Spacing system (px): #############
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #0f9afe;
+
+  --color-white-400: #effbff;
+  --color-white-200: #eff8ff;
+
+  --color-gray: #6e7275;
+  --color-gray-200: #293145;
+  --color-gray-light: #dbdbdb;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  /* Only works if there is nothing absolutely positioned in relation to body*/
+  overflow-x: hidden;
+}
+
+/* =================== Layout System ================= */
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+/* if is NOT the last child */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+.grid--3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid--center-v {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-24 {
+  margin-bottom: 2.4rem !important;
+}
+
+*:focus {
+  outline: none;
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem var(--color-primary);
+}

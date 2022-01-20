@@ -1,0 +1,137 @@
+@media (max-width: 1022px) {
+  .grid {
+    column-gap: 3.2rem;
+  }
+  .section-hero__text {
+    font-size: 3.6rem;
+  }
+
+  .section-plan__type {
+    font-size: 2rem;
+  }
+
+  .section-plan__price {
+    font-size: 5.2rem;
+  }
+
+  .section-plan__plan {
+    padding: 3rem;
+  }
+
+  .section-plan__--premium::before {
+    right: -24%;
+  }
+}
+
+@media (max-width: 848px) {
+  .section-plan__type {
+    font-size: 2rem;
+  }
+
+  .section-plan__price {
+    font-size: 5.2rem;
+  }
+
+  .section-plan__plan {
+    padding: 3rem;
+  }
+
+  .section-plan__description {
+    font-size: 1.4rem;
+  }
+
+  .section-plan__--premium::before {
+    top: 8%;
+    right: -22.6%;
+
+    padding: 0.2rem 5.2rem;
+  }
+}
+
+@media (max-width: 771px) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .section-plan__container {
+    padding: 4.8rem 0;
+  }
+
+  .section-plan .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-plan__plan {
+    padding: 6rem;
+  }
+
+  .section-plan__--premium::before {
+    top: 8%;
+    right: -17.6%;
+    padding: 0.8rem 8rem;
+  }
+}
+
+@media (max-width: 771px) {
+  .section-hero {
+    padding: 4.8rem 0;
+    &__container {
+      text-align: center;
+      grid-template-columns: 1fr;
+    }
+    &__img {
+      width: 60%;
+    }
+  }
+  .section-how {
+    .grid--3-cols {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .section-app {
+    text-align: center;
+
+    .grid--2-cols {
+      grid-template-columns: 1fr;
+    }
+
+    &__cta {
+      justify-content: center;
+    }
+  }
+  .section-plan {
+    &__plan {
+      padding: 3rem;
+    }
+  }
+
+  .section-plan__--premium::before {
+    padding: 0.5rem 5rem;
+  }
+
+  .section-contact {
+    .container-heading {
+      max-width: 30rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .section-plan {
+    &__container {
+      .grid--3-cols {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  .section-plan__--premium::before {
+    top: 19%;
+    right: -14.6%;
+    padding: 0.8rem 11rem;
+  }
+}
